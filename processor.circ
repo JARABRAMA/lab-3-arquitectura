@@ -62,8 +62,18 @@
     <a name="circuit" val="monocycle_processor"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="3" loc="(280,300)" name="Adder">
+    <comp lib="3" loc="(270,400)" name="Adder">
       <a name="width" val="32"/>
+    </comp>
+  </circuit>
+  <circuit name="program_counter">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="program_counter"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="3" loc="(400,200)" name="Adder"/>
+    <comp lib="4" loc="(220,300)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
     </comp>
   </circuit>
 </project>
