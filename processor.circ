@@ -929,8 +929,9 @@
     <comp lib="0" loc="(970,760)" name="Constant">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="1" loc="(2260,1000)" name="AND Gate">
+    <comp lib="1" loc="(2260,990)" name="AND Gate">
       <a name="facing" val="north"/>
+      <a name="label" val="pc_src"/>
     </comp>
     <comp lib="12" loc="(2260,1230)" name="ALU_32bits"/>
     <comp lib="2" loc="(1480,1270)" name="Multiplexer">
@@ -958,7 +959,8 @@
     <comp lib="4" loc="(800,1230)" name="ROM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 8 32
-8*0 4
+20100020 200affff 200b0000 20b7020 31c80000 250a0003 1004820 216b0001
+2400fffa 1296020 4*18c6020 1296820 18d6822 ae0d0000
 </a>
       <a name="dataWidth" val="32"/>
     </comp>
@@ -995,6 +997,8 @@
     <wire from="(1520,1230)" to="(1520,1710)"/>
     <wire from="(1520,1230)" to="(1560,1230)"/>
     <wire from="(1520,1710)" to="(1640,1710)"/>
+    <wire from="(1540,1330)" to="(1540,1460)"/>
+    <wire from="(1540,1330)" to="(1560,1330)"/>
     <wire from="(1540,1510)" to="(1540,1590)"/>
     <wire from="(1540,1510)" to="(1600,1510)"/>
     <wire from="(1540,1590)" to="(1820,1590)"/>
@@ -1052,11 +1056,11 @@
     <wire from="(2090,970)" to="(2950,970)"/>
     <wire from="(2160,1000)" to="(2160,1150)"/>
     <wire from="(2160,1150)" to="(2380,1150)"/>
-    <wire from="(2240,1050)" to="(2240,1100)"/>
+    <wire from="(2240,1040)" to="(2240,1100)"/>
     <wire from="(2260,1230)" to="(2400,1230)"/>
     <wire from="(2260,1250)" to="(2280,1250)"/>
-    <wire from="(2260,820)" to="(2260,1000)"/>
-    <wire from="(2280,1050)" to="(2280,1250)"/>
+    <wire from="(2260,820)" to="(2260,990)"/>
+    <wire from="(2280,1040)" to="(2280,1250)"/>
     <wire from="(2280,1340)" to="(2280,1450)"/>
     <wire from="(2380,1150)" to="(2380,1290)"/>
     <wire from="(2380,1290)" to="(2600,1290)"/>
@@ -1080,13 +1084,16 @@
     <wire from="(3070,1210)" to="(3070,2010)"/>
     <wire from="(310,1300)" to="(660,1300)"/>
     <wire from="(310,990)" to="(310,1300)"/>
-    <wire from="(400,1280)" to="(630,1280)"/>
+    <wire from="(400,1280)" to="(590,1280)"/>
     <wire from="(400,980)" to="(400,1280)"/>
     <wire from="(440,1260)" to="(630,1260)"/>
     <wire from="(440,960)" to="(440,1260)"/>
     <wire from="(520,1240)" to="(630,1240)"/>
     <wire from="(520,640)" to="(2040,640)"/>
     <wire from="(520,640)" to="(520,1240)"/>
+    <wire from="(590,1280)" to="(590,1460)"/>
+    <wire from="(590,1280)" to="(630,1280)"/>
+    <wire from="(590,1460)" to="(1540,1460)"/>
     <wire from="(690,1240)" to="(750,1240)"/>
     <wire from="(750,1190)" to="(750,1240)"/>
     <wire from="(750,1190)" to="(760,1190)"/>
@@ -1383,7 +1390,6 @@
     <comp lib="1" loc="(650,680)" name="AND Gate">
       <a name="inputs" val="6"/>
       <a name="label" val="beq"/>
-      <a name="negate0" val="true"/>
       <a name="negate1" val="true"/>
       <a name="negate2" val="true"/>
       <a name="negate4" val="true"/>
@@ -1439,7 +1445,7 @@
     <wire from="(460,440)" to="(590,440)"/>
     <wire from="(460,540)" to="(460,650)"/>
     <wire from="(460,540)" to="(600,540)"/>
-    <wire from="(460,650)" to="(590,650)"/>
+    <wire from="(460,650)" to="(600,650)"/>
     <wire from="(650,370)" to="(690,370)"/>
     <wire from="(650,470)" to="(710,470)"/>
     <wire from="(650,570)" to="(710,570)"/>
